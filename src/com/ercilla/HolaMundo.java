@@ -3,7 +3,9 @@ package com.ercilla;
 public class HolaMundo {
 
     public static void main (String[] args) {
-        System.out.println("HolaMundo!!");
+          Mensaje msg = new Mensaje();
+          String nombre = msg.SolicitarDatos("Escribe tu nombre: ");
+          msg.saludar(nombre);
     }
 
 }
